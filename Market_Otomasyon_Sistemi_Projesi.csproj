@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95573205-36B5-467B-AB67-71A28247E595}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Market_Otomasyon_Sistemi_Projesi</RootNamespace>
+    <AssemblyName>Market_Otomasyon_Sistemi_Projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlacakVerecekDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlacakVerecekDuzenleForm.Designer.cs">
+      <DependentUpon>AlacakVerecekDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlacakVerecekKayitEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlacakVerecekKayitEkleForm.Designer.cs">
+      <DependentUpon>AlacakVerecekKayitEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlacakVerecekTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlacakVerecekTablosu.Designer.cs">
+      <DependentUpon>AlacakVerecekTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirGiderKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirGiderKayitDuzenleForm.Designer.cs">
+      <DependentUpon>GelirGiderKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirGiderKayitEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirGiderKayitEkleForm.Designer.cs">
+      <DependentUpon>GelirGiderKayitEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirGiderTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirGiderTablosu.Designer.cs">
+      <DependentUpon>GelirGiderTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="introForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="introForm.Designer.cs">
+      <DependentUpon>introForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinDuzenleForm.Designer.cs">
+      <DependentUpon>IzinDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinIslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinIslemleriForm.Designer.cs">
+      <DependentUpon>IzinIslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzinEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzinEkleForm.Designer.cs">
+      <DependentUpon>IzinEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaDuzenleForm.Designer.cs">
+      <DependentUpon>KasaDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaEkleForm.Designer.cs">
+      <DependentUpon>KasaEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaYonetimEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaYonetimEkranı.Designer.cs">
+      <DependentUpon>KasaYonetimEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriTanimlamaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriTanimlamaForm.Designer.cs">
+      <DependentUpon>KategoriTanimlamaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitSilForm.Designer.cs">
+      <DependentUpon>KayitSilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitSilForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitSilForm1.Designer.cs">
+      <DependentUpon>KayitSilForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisForm.Designer.cs">
+      <DependentUpon>KullaniciGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaasKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaasKayitDuzenleForm.Designer.cs">
+      <DependentUpon>MaasKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaasKayitEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaasKayitEkleForm.Designer.cs">
+      <DependentUpon>MaasKayitEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaasTablosuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaasTablosuForm.Designer.cs">
+      <DependentUpon>MaasTablosuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriKayitForm.Designer.cs">
+      <DependentUpon>MusteriKayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri_Islemleri_Menusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_Islemleri_Menusu.Designer.cs">
+      <DependentUpon>Musteri_Islemleri_Menusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusterKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusterKayitDuzenleForm.Designer.cs">
+      <DependentUpon>MusterKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelG_CKayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelG_CKayitlari.Designer.cs">
+      <DependentUpon>PersonelG_CKayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKayitDuzenleForm.Designer.cs">
+      <DependentUpon>PersonelKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayıtEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKayıtEkleForm.Designer.cs">
+      <DependentUpon>PersonelKayıtEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_Islemleri_Menusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_Islemleri_Menusu.Designer.cs">
+      <DependentUpon>Personel_Islemleri_Menusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiparisDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisDuzenleForm.Designer.cs">
+      <DependentUpon>SiparisDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisOlusturForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisOlusturForm.Designer.cs">
+      <DependentUpon>SiparisOlusturForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisİslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisİslemleriForm.Designer.cs">
+      <DependentUpon>SiparisİslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokGirisEkraniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokGirisEkraniForm.Designer.cs">
+      <DependentUpon>StokGirisEkraniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokKayitDuzenleForm.Designer.cs">
+      <DependentUpon>StokKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokTablosu.Designer.cs">
+      <DependentUpon>StokTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciKayitEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciKayitEkleForm.Designer.cs">
+      <DependentUpon>TedarikciKayitEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciKayitDuzenleForm.Designer.cs">
+      <DependentUpon>TedarikciKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciTemsilciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciTemsilciForm.Designer.cs">
+      <DependentUpon>TedarikciTemsilciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciTemsilcikayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciTemsilcikayitDuzenleForm.Designer.cs">
+      <DependentUpon>TedarikciTemsilcikayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciTemsilciKayitEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciTemsilciKayitEkleForm.Designer.cs">
+      <DependentUpon>TedarikciTemsilciKayitEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tedarikci_Yonetim_Menusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tedarikci_Yonetim_Menusu.Designer.cs">
+      <DependentUpon>Tedarikci_Yonetim_Menusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkleEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEkleEkrani.Designer.cs">
+      <DependentUpon>UrunEkleEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunKayitDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunKayitDuzenleForm.Designer.cs">
+      <DependentUpon>UrunKayitDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urun_Yonetimi_Menusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urun_Yonetimi_Menusu.Designer.cs">
+      <DependentUpon>Urun_Yonetimi_Menusu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlacakVerecekDuzenleForm.resx">
+      <DependentUpon>AlacakVerecekDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlacakVerecekKayitEkleForm.resx">
+      <DependentUpon>AlacakVerecekKayitEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlacakVerecekTablosu.resx">
+      <DependentUpon>AlacakVerecekTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirGiderKayitDuzenleForm.resx">
+      <DependentUpon>GelirGiderKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirGiderKayitEkleForm.resx">
+      <DependentUpon>GelirGiderKayitEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirGiderTablosu.resx">
+      <DependentUpon>GelirGiderTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="introForm.resx">
+      <DependentUpon>introForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinDuzenleForm.resx">
+      <DependentUpon>IzinDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinIslemleriForm.resx">
+      <DependentUpon>IzinIslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzinEkleForm.resx">
+      <DependentUpon>IzinEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaDuzenleForm.resx">
+      <DependentUpon>KasaDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaEkleForm.resx">
+      <DependentUpon>KasaEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaYonetimEkranı.resx">
+      <DependentUpon>KasaYonetimEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriTanimlamaForm.resx">
+      <DependentUpon>KategoriTanimlamaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitSilForm.resx">
+      <DependentUpon>KayitSilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitSilForm1.resx">
+      <DependentUpon>KayitSilForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGirisForm.resx">
+      <DependentUpon>KullaniciGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaasKayitDuzenleForm.resx">
+      <DependentUpon>MaasKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaasKayitEkleForm.resx">
+      <DependentUpon>MaasKayitEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaasTablosuForm.resx">
+      <DependentUpon>MaasTablosuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriKayitForm.resx">
+      <DependentUpon>MusteriKayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_Islemleri_Menusu.resx">
+      <DependentUpon>Musteri_Islemleri_Menusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusterKayitDuzenleForm.resx">
+      <DependentUpon>MusterKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelG_CKayitlari.resx">
+      <DependentUpon>PersonelG_CKayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayitDuzenleForm.resx">
+      <DependentUpon>PersonelKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayıtEkleForm.resx">
+      <DependentUpon>PersonelKayıtEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_Islemleri_Menusu.resx">
+      <DependentUpon>Personel_Islemleri_Menusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SiparisDuzenleForm.resx">
+      <DependentUpon>SiparisDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisOlusturForm.resx">
+      <DependentUpon>SiparisOlusturForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisİslemleriForm.resx">
+      <DependentUpon>SiparisİslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokGirisEkraniForm.resx">
+      <DependentUpon>StokGirisEkraniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokKayitDuzenleForm.resx">
+      <DependentUpon>StokKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokTablosu.resx">
+      <DependentUpon>StokTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciKayitEkleForm.resx">
+      <DependentUpon>TedarikciKayitEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciKayitDuzenleForm.resx">
+      <DependentUpon>TedarikciKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciTemsilciForm.resx">
+      <DependentUpon>TedarikciTemsilciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciTemsilcikayitDuzenleForm.resx">
+      <DependentUpon>TedarikciTemsilcikayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciTemsilciKayitEkleForm.resx">
+      <DependentUpon>TedarikciTemsilciKayitEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tedarikci_Yonetim_Menusu.resx">
+      <DependentUpon>Tedarikci_Yonetim_Menusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkleEkrani.resx">
+      <DependentUpon>UrunEkleEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunKayitDuzenleForm.resx">
+      <DependentUpon>UrunKayitDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urun_Yonetimi_Menusu.resx">
+      <DependentUpon>Urun_Yonetimi_Menusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artboard 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market araba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kastamonu_uni_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KASTAMONU ÜNİVERSİTESİ MESLEK YÜKSEKOKULU BİLGİSAYAR PROGRAMCIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kastamonu_uni_logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_business.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Çalışma yüzeyi 1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
