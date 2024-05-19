@@ -2,7 +2,7 @@
 Proje üzerinde hala çalışmaktayım
 Proje Visual Studio 2019 üzerinde sorunsuz çalışıyor.
 .sln dosyası Market_Otomasyon_Sistemi_Projesi adlı klasörde, diğer dosyalarla aynı dizinde bulunuyor.
-Veritabanının yedeğini yükledim DataBase adlı klasörde bulunuyor.
+Veritabanını .dacpac formatında yükledim DataBase adlı klasörde bulunuyor.
 Veritabanı versiyonu: 15.0.4153.1 (X64)
 # Veritabanını Uygulamanın Kullanımına Hazırlamak
 Şu adımları takip edebilirsiniz
